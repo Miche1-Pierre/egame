@@ -7,12 +7,13 @@
 /* ROOT */
 :root {
     /* Color Definitions */
-    --color-background: #151c37;
+    --color-background: linear-gradient(#1c2446, #10152e 30%);
     --color-black: #222222;
     --color-white: #F2F2F2;
     --color-gray: #808080;
     --color-orange: #ff5f2d;
     --color-blue: #17caac;
+    --color-purple: #7a6ff0;
     /*17caac*/
     /* Font-size Definitions */
     --font-size-logo: 30px;
@@ -1294,12 +1295,14 @@ footer .Bullets:nth-child(8) {
 }
 
 .Categories .container .box {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 253px;
     width: 500px;
-    margin: 20px 20px;
+    margin: 30px 10px;
+    border-radius: 10px;
 }
 
 .Categories .container .box:nth-child(1) {
@@ -1333,74 +1336,116 @@ footer .Bullets:nth-child(8) {
     background-image: url(GameType/Combat/BackgroundCombat.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .Categories .container .box:nth-child(5) {
     background-image: url(GameType/FPS/BackgroundFPS.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .Categories .container .box:nth-child(6) {
     background-image: url(GameType/JeuxSolo/BackgroundJeuxSolo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .Categories .container .box:nth-child(7) {
     background-image: url(GameType/RPG/BackgroundRPG.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .Categories .container .box:nth-child(8) {
     background-image: url(GameType/Stratégie/BackgroundStrategie.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .Categories .container .box:nth-child(9) {
     background-image: url(GameType/VR/BackgroundVR.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.Categories .container .box img {
+    border-radius: 10px;
+    position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    right: 50px;
+    transition: .3s;
 }
 
-.Categories .container .box .content:nth-child(1) {
-    position: relative;
-    z-index: 10;
-    right: -125px;
-    bottom: 4px;
+.Categories .container .box:nth-child(1) img {
+    width: 265px;
 }
 
-.Categories .container .box .content:nth-child(2) {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index: 10;
-    right: -125px;
-    bottom: 11px;
+.Categories .container .box:nth-child(1):hover img {
+    width: 275px;
 }
 
-.Categories .container .box .content img {
-    width: 100%;
+.Categories .container .box:nth-child(2) img {
+    width: 220px;
+}
+
+.Categories .container .box:nth-child(2):hover img {
+    width: 230px;
+}
+
+.Categories .container .box:nth-child(3) img {
+    width: 185px;
+}
+
+.Categories .container .box:nth-child(3):hover img {
+    width: 195px;
+}
+
+.Categories .container .box:nth-child(4) img {
+    width: 250px;
+}
+
+.Categories .container .box:nth-child(4):hover img {
+    width: 260px;
+}
+
+.Categories .container .box:nth-child(5) img {
+    width: 400px;
+}
+
+.Categories .container .box:nth-child(5):hover img {
+    width: 410px;
+}
+
+.Categories .container .box:nth-child(6) img {
+    width: 205px;
+}
+
+.Categories .container .box:nth-child(6):hover img {
+    width: 215px;
+}
+
+.Categories .container .box:nth-child(7) img {
+    width: 230px;
+}
+
+.Categories .container .box:nth-child(7):hover img {
+    width: 240px;
+}
+
+.Categories .container .box:nth-child(8) img {
+    width: 270px;
+}
+
+.Categories .container .box:nth-child(8):hover img {
+    width: 280px;
+}
+
+.Categories .container .box:nth-child(9) img {
+    width: 235px;
+}
+
+.Categories .container .box:nth-child(9):hover img {
+    width: 245px;
 }
 
 .Categories .container .box a {
@@ -1409,23 +1454,24 @@ footer .Bullets:nth-child(8) {
     justify-content: center;
     height: 50px;
     width: 220px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     color: var(--color-white);
     font-weight: 400;
     letter-spacing: .2rem;
     text-decoration: none;
+    margin-right: 40px;
     transition: .3s;
     z-index: 1;
 }
 
 .Categories .container .box a:hover {
-    background: var(--color-background);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: var(--color-orange);
+    box-shadow: 0 15px 35px rgba(204, 65, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
-    color: white;
+    font-weight: 600;
 }
