@@ -12,7 +12,8 @@
     --color-white: #F2F2F2;
     --color-gray: #808080;
     --color-orange: #ff5f2d;
-    --color-blue: #2d5fff ; /*#4A5DBF*/
+    --color-blue: #0066ff;
+    /*#4A5DBF*/
     --color-purple: #7a6ff0;
     /*17caac*/
     /* Font-size Definitions */
@@ -527,16 +528,6 @@ section {
     filter: blur(15px);
 }
 
-.trends .container .box:nth-child(2)::before,
-.trends .container .box:nth-child(2)::after {
-    background: var(--color-orange);
-}
-
-.trends .container .box:nth-child(3)::before,
-.trends .container .box:nth-child(3)::after {
-    background: var(--color-blue);
-}
-
 .trends .container .box span {
     position: absolute;
     top: 4px;
@@ -620,7 +611,7 @@ section {
 }
 
 .trends .container .box .content a:hover {
-    background: var(--color-background);
+    background: var(--color-blue);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -1474,4 +1465,171 @@ footer .Bullets:nth-child(8) {
     border-top: 1px solid rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     font-weight: 600;
+}
+
+
+/* Section TypeGame */
+.TypeGame {
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+}
+
+.TypeGame h2 {
+    position: absolute;
+    top: 200px;
+    font-size: var(--font-size-h1);
+}
+
+.TypeGame h2::before {
+    content: '';
+    position: absolute;
+    margin-top: 40px;
+    background-color: var(--color-orange);
+    border-radius: 10px;
+    height: 4px;
+    width: 33%;
+}
+
+.TypeGame .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 400px;
+}
+
+.TypeGame .container .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 0 50px;
+    margin: 0 50px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.TypeGame .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.TypeGame .container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    filter: blur(15px);
+}
+
+.TypeGame .container .box span {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.TypeGame .container .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    pointer-events: none;
+}
+
+.TypeGame .container .box .content {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.TypeGame .container .box .content img {
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.TypeGame .container .box .content h3 {
+    font-size: var(--font-size-h2);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.TypeGame .container .box .content ul {
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+
+.TypeGame .container .box .content ul li {
+    font-size: var(--font-size-h2);
+    color: var(--color-white);
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 20px;
+    list-style: none;
+}
+
+.TypeGame .container .box .content ul li:nth-child(2) {
+    color: var(--color-gray);
+    text-decoration: line-through;
+    font-size: var(--font-size-text);
+}
+
+.TypeGame .container .box .content a {
+    position: absolute;
+    bottom: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 220px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 1;
+}
+
+.TypeGame .container .box .content a:hover {
+    background: var(--color-orange);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    color: white;
 }
