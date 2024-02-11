@@ -3,3 +3,5 @@
 ![Capture d'écran 2024-02-11 194725](https://github.com/Starloulouwars/Game-Invaders/assets/155090917/5ac542c0-f8a8-497f-ad59-41552f426be3)
 ![Capture d'écran 2024-02-11 194739](https://github.com/Starloulouwars/Game-Invaders/assets/155090917/7b19ef9a-b307-4e4b-bb68-18836668ccba)
 ![Capture d'écran 2024-02-11 194756](https://github.com/Starloulouwars/Game-Invaders/assets/155090917/f64e69d2-e4ff-4b87-a1b5-40257057bd9a)
+![Capture d'écran 2024-02-11 195817](https://github.com/Starloulouwars/Game-Invaders/assets/155090917/cbd77e70-66f5-41bc-ac6f-d6efc361baf5)
+![Capture d'écran 2024-02-11 195826](https://github.com/Starloulouwars/Game-Invaders/assets/155090917/9979450c-5728-4880-9f53-8135c4f60bdb)
