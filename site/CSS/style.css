@@ -334,15 +334,17 @@ section {
 /* Right */
 .right {
     max-width: 50%;
-    z-index: -1;
 }
 
 .right .SpaceShip {
     position: absolute;
     right: 20%;
     bottom: 5%;
-    width: 12%;
+    width: 10%;
     height: 25%;
+}
+
+.right:hover .SpaceShip {
     animation: SpaceShip 6s infinite ease;
 }
 
@@ -374,16 +376,26 @@ section {
 
 .right .Invaders:nth-child(1) {
     right: 35%;
-    animation: Invaders1 4s infinite ease-in-out;
 }
 
 .right .Invaders:nth-child(2) {
     right: 25%;
-    animation: Invaders2 3s infinite ease-in-out;
+    top: 30%;
 }
 
 .right .Invaders:nth-child(3) {
     right: 15%;
+}
+
+.right:hover .Invaders:nth-child(1) {
+    animation: Invaders1 4s infinite ease-in-out;
+}
+
+.right:hover .Invaders:nth-child(2) {
+    animation: Invaders2 3s infinite ease-in-out;
+}
+
+.right:hover .Invaders:nth-child(3) {
     animation: Invaders3 5s infinite ease-in-out;
 }
 
@@ -407,7 +419,7 @@ section {
     }
 
     50% {
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 
     100% {
@@ -438,26 +450,39 @@ section {
 .right .Bullets:nth-child(4) {
     right: 12%;
     bottom: 50%;
-    animation: Bullets1 2s infinite linear;
 }
 
 .right .Bullets:nth-child(5) {
     right: 20%;
     bottom: 30%;
-    animation: Bullets2 3s infinite linear;
 }
 
 .right .Bullets:nth-child(6) {
     right: 33%;
     bottom: 40%;
-    animation: Bullets3 4s infinite linear;
 }
 
 .right .Bullets:nth-child(7) {
     right: 40%;
     bottom: 20%;
+}
+
+.right:hover .Bullets:nth-child(4) {
+    animation: Bullets1 2s infinite linear;
+}
+
+.right:hover .Bullets:nth-child(5) {
+    animation: Bullets2 3s infinite linear;
+}
+
+.right:hover .Bullets:nth-child(6) {
+    animation: Bullets3 4s infinite linear;
+}
+
+.right:hover .Bullets:nth-child(7) {
     animation: Bullets4 2s infinite linear;
 }
+
 
 @keyframes Bullets1 {
     0% {
@@ -1683,6 +1708,7 @@ footer .Bullets:nth-child(8) {
     .nav-links ul li {
         display: block;
     }
+
     .nav-links ul li a {
         display: block;
         font-size: var(--font-size-text);
