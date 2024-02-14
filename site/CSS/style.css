@@ -92,6 +92,7 @@ header {
 .navbar a:hover,
 .navbar .active {
     text-decoration: underline;
+    text-decoration-thickness: 4px;
     text-decoration-color: var(--color-orange);
 }
 
