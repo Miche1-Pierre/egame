@@ -62,7 +62,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: .5rem 9%;
     background: transparent;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
