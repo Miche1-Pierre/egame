@@ -74,10 +74,8 @@ header {
     color: var(--color-white);
 }
 
-.logo span {
-    color: var(--color-orange);
-    font-weight: 600;
-    transition: .2s;
+.logo img {
+    width: 20%;
 }
 
 .navbar {
@@ -95,7 +93,7 @@ header {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 0 12px;
     position: relative;
 }
 
