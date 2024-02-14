@@ -94,6 +94,10 @@ header {
     color: var(--color-orange);
 }
 
+.navbar a i {
+    font-size: var(--font-size-logo);
+}
+
 /* MAIN */
 /* Section Home */
 section {
@@ -941,7 +945,7 @@ section {
     position: relative;
     width: 100px;
     height: 100px;
-    bottom: 125px;
+    bottom: 130px;
     left: 250px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -969,7 +973,7 @@ section {
     border-right: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-left: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    animation: cube2 8s ease-in-out infinite;
+    animation: cube2 10s ease-in-out infinite;
     z-index: 1;
 }
 
@@ -979,7 +983,7 @@ section {
     }
 
     50% {
-        transform: translateY(50px);
+        transform: translateY(20px);
     }
 
     100% {
@@ -1019,7 +1023,7 @@ section {
     border-right: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-left: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    animation: cube1 5s ease-in-out infinite;
+    animation: cube3 5s ease-in-out infinite;
     z-index: 3;
 }
 
@@ -1037,12 +1041,12 @@ section {
     border-right: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-left: 1px solid 50% rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    animation: cube2 8s ease-in-out infinite;
+    animation: cube4 8s ease-in-out infinite;
     z-index: 1;
     overflow: hidden;
 }
 
-@keyframes cube1 {
+@keyframes cube3 {
     0% {
         transform: translateY(0px);
     }
@@ -1056,7 +1060,7 @@ section {
     }
 }
 
-@keyframes cube2 {
+@keyframes cube4 {
     0% {
         transform: translateY(0px);
         overflow: hidden;
@@ -1076,7 +1080,7 @@ section {
 /*Icons*/
 .bx-left-arrow {
     position: relative;
-    color: var(--color-orange);
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
