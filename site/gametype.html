@@ -17,15 +17,33 @@
         <a href="#" class="logo">Game <span>Invaders</span></a>
 
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="gametype.html" class="active">Game Types</a>
-            <a href="#">News</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="login.html">Log-In</a>
-            <a href=""><i class='bx bxs-cart'></i></a>
-            <a href=""><i class='bx bxs-user'></i></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bx bx-x" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gametype.html">Game Types</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log-in/Sign-in</a></li>
+                    <li><i class='bx bxs-cart'></i></li>
+                    <li><i class='bx bxs-user'></i></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="ShowMenu()"></i>
         </nav>
     </header>
+
+    <!------Javascript for MENU------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     <!-- MAIN -->
     <main>
         <!-- Trends -->
@@ -35,47 +53,56 @@
                 <!-- 1 box -->
                 <div class="box">
                     <a href="Action.html" class="btn">Action</a>
-                    <img src="CSS/GameType/Action/AnimationAction.png" alt="Image de la catégorie 'Action'. Représente un gladiateur.">
+                    <img src="CSS/GameType/Action/AnimationAction.png"
+                        alt="Image de la catégorie 'Action'. Représente un gladiateur.">
                 </div>
                 <!-- 2 box -->
                 <div class="box">
                     <a href="" class="btn">Arcade</a>
-                    <img src="CSS/GameType/Arcade/AnimationArcade.png" alt="Image de la catégorie 'Arcade'. Représente une bataille galactique.">
+                    <img src="CSS/GameType/Arcade/AnimationArcade.png"
+                        alt="Image de la catégorie 'Arcade'. Représente une bataille galactique.">
                 </div>
                 <!-- 3 box -->
                 <div class="box">
                     <a href="" class="btn">Aventure</a>
-                    <img src="CSS/GameType/Aventure/AnimationAventure.png" alt="Image de la catégorie 'Aventure'. Représente une scène de pirates.">
+                    <img src="CSS/GameType/Aventure/AnimationAventure.png"
+                        alt="Image de la catégorie 'Aventure'. Représente une scène de pirates.">
                 </div>
                 <!-- 4 box -->
                 <div class="box">
                     <a href="" class="btn">Combat</a>
-                    <img src="CSS/GameType/Combat/AnimationCombat.png" alt="Image de la catégorie 'Combat'. Représente un personnage équipé de gants de boxes.">
+                    <img src="CSS/GameType/Combat/AnimationCombat.png"
+                        alt="Image de la catégorie 'Combat'. Représente un personnage équipé de gants de boxes.">
                 </div>
                 <!-- 5 box -->
                 <div class="box">
                     <a href="" class="btn">FPS</a>
-                    <img src="CSS/GameType/FPS/AnimationFPS.png" alt="Image de la catégorie 'FPS'. Représente un militaire.">
+                    <img src="CSS/GameType/FPS/AnimationFPS.png"
+                        alt="Image de la catégorie 'FPS'. Représente un militaire.">
                 </div>
                 <!-- 6 box -->
                 <div class="box">
                     <a href="" class="btn">Jeux Solo</a>
-                    <img src="CSS/GameType/JeuxSolo/AnimationJeuxSolo.png" alt="Image de la catégorie 'Jeux Solo'. Représente une exploratrice, le personnage de Lara Croft.">
+                    <img src="CSS/GameType/JeuxSolo/AnimationJeuxSolo.png"
+                        alt="Image de la catégorie 'Jeux Solo'. Représente une exploratrice, le personnage de Lara Croft.">
                 </div>
                 <!-- 7 box -->
                 <div class="box">
                     <a href="" class="btn">RPG</a>
-                    <img src="CSS/GameType/RPG/AnimationRPG.png" alt="Image de la catégorie 'RPG'. Représente une scène médiéviale.">
+                    <img src="CSS/GameType/RPG/AnimationRPG.png"
+                        alt="Image de la catégorie 'RPG'. Représente une scène médiéviale.">
                 </div>
                 <!-- 8 box -->
                 <div class="box">
                     <a href="" class="btn">Stratégie</a>
-                    <img src="CSS/GameType/Stratégie/AnimationStrategie.png" alt="Image de la catégorie 'Stratégie'. Représente une femme dans une tenue de tacticienne galactique.">
+                    <img src="CSS/GameType/Stratégie/AnimationStrategie.png"
+                        alt="Image de la catégorie 'Stratégie'. Représente une femme dans une tenue de tacticienne galactique.">
                 </div>
                 <!-- 9 box -->
                 <div class="box">
                     <a href="" class="btn">VR</a>
-                    <img src="CSS/GameType/VR/AnimationVR.png" alt="Image de la catégorie 'VR'. Représente une scène dystopique.">
+                    <img src="CSS/GameType/VR/AnimationVR.png"
+                        alt="Image de la catégorie 'VR'. Représente une scène dystopique.">
                 </div>
             </div>
         </section>
