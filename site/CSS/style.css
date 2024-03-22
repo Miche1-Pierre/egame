@@ -151,7 +151,7 @@ section {
     margin: auto;
     color: var(--color-white);
     font-size: var(--font-size-logo);
-    animation: chevron 1.5s infinite ease-in-out;
+    animation: chevron 2s infinite ease-in;
     border-radius: 5rem;
     box-shadow: 0px 0px 7px 5px var(--color-orange);
 
@@ -164,7 +164,7 @@ section {
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
         box-shadow: 0px 0px 7px 5px var(--color-orange);
     }
 
@@ -337,10 +337,23 @@ section {
 .right .Gamer {
     position: absolute;
     right: 10%;
-    bottom: 20%;
+    bottom: 12%;
     width: 33%;
-    height: 47%;
+    animation: gamer 5s infinite ease-in-out;
 }
+
+@keyframes gamer {
+    0% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
 
 /* Section Trends */
 .trends {
@@ -1556,5 +1569,25 @@ footer .Bullets:nth-child(8) {
 
     .nav-links ul {
         padding: 30px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        max-width: 100%;
+    }
+    
+    .right .Gamer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        width: 33%;
+        height: 47%;
     }
 }
