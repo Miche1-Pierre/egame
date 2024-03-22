@@ -809,13 +809,13 @@ section {
 
 .sign .forget a {
     text-decoration: underline;
-    color: white;
+    color: var(--color-orange);
     font-weight: bold;
     transition: 0.2s;
 }
 
 .sign .forget a:hover {
-    color: black;
+    color: rgb(0, 200, 100);
 }
 
 .sign .checkBox p {
