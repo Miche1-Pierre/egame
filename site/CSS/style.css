@@ -1740,3 +1740,45 @@ footer .Bullets:nth-child(8) {
         padding: 30px;
     }
 }
+
+/* The side navigation menu */
+.sidebar {
+    right: 20px;
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 12%;
+    height: 88%;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-right: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
