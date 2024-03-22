@@ -25,12 +25,13 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Log-in/Sign-in</a></li>
-                    <li><i class='bx bxs-cart'></i></li>
+                    <li><button onclick="open_cart()"><i id="panier" class='bx bxs-cart cart_icon'></i></button></li>
                     <li><i class='bx bxs-user'></i></li>
                 </ul>
             </div>
             <i class='bx bx-menu' onclick="ShowMenu()"></i>
         </nav>
+        
     </header>
 
     <!------Javascript for MENU------>
@@ -47,7 +48,7 @@
     <!-- The sidebar -->
     <div id="sidebar" class="sidebar">      
 
-        <a href="#">Retour</a>
+        <a onclick="close_cart()" href="#">Retour</a>
   </div>
   
   <!-- Page content -->
@@ -188,7 +189,7 @@
         <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
         <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
     </footer>
-
+    <script src="panier.js"></script>
 </body>
 
 </html>
