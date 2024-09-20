@@ -17,15 +17,33 @@
         <a href="#" class="logo">Game <span>Invaders</span></a>
 
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="#">Game Types</a>
-            <a href="#">News</a>
-            <a href="#">Contact Us</a>
-            <a href="login.html">Log-In/Sign-In</a>
-            <a href=""><i class='bx bxs-cart'></i></a>
-            <a href=""><i class='bx bxs-user'></i></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bx bx-x" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gametype.html">Game Types</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log-in/Sign-in</a></li>
+                    <li><i class='bx bxs-cart'></i></li>
+                    <li><i class='bx bxs-user'></i></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="ShowMenu()"></i>
         </nav>
     </header>
+
+    <!------Javascript for MENU------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     <!-- MAIN -->
     <main>
         <!-- Trends -->
@@ -36,11 +54,12 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/GameType/Action/LibrairieAction/assassin-s-creed-mirage-pc-jeu-ubisoft-connect-europe-cover.jpg" alt="Image de promotion du jeu 'Assasins screed mirage'">
-                        <h3>R.O.R 2</h3>
+                        <img src="CSS/GameType/Action/LibrairieAction/resized/sm-assassin-s-creed-mirage-pc-jeu-ubisoft-connect-europe-cover.jpg"
+                            alt="Image de promotion du jeu 'Assasins screed mirage'">
+                        <h3>Assasins screed: Mirage</h3>
                         <ul>
-                            <li>4,89 €</li>
-                            <li>9,99 €</li>
+                            <li>24,89€</li>
+                            <li>69,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -49,11 +68,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
+                        <img src="CSS/Images/Index/sm-GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
                         <h3>Gealty Gear Strive</h3>
                         <ul>
-                            <li>8,67 €</li>
-                            <li>19,99 €</li>
+                            <li>8,67€</li>
+                            <li>19,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -62,10 +81,10 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
+                        <img src="CSS/Images/Index/sm-HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
                         <h3>Hollow Knight</h3>
                         <ul>
-                            <li>6,21 €</li>
+                            <li>6,21€</li>
                             <li>12,99 €</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
@@ -75,11 +94,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/ROR2.jpg" alt="Image de promotion du jeu 'Risk of Rain 2'">
+                        <img src="CSS/Images/Index/sm-ROR2.jpg" alt="Image de promotion du jeu 'Risk of Rain 2'">
                         <h3>R.O.R 2</h3>
                         <ul>
-                            <li>4,89 €</li>
-                            <li>9,99 €</li>
+                            <li>4,89€</li>
+                            <li>9,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -88,11 +107,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
+                        <img src="CSS/Images/Index/sm-GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
                         <h3>Gealty Gear Strive</h3>
                         <ul>
-                            <li>8,67 €</li>
-                            <li>19,99 €</li>
+                            <li>8,67€</li>
+                            <li>19,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -101,11 +120,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
+                        <img src="CSS/Images/Index/sm-HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
                         <h3>Hollow Knight</h3>
                         <ul>
-                            <li>6,21 €</li>
-                            <li>12,99 €</li>
+                            <li>6,21€</li>
+                            <li>12,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -114,11 +133,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/ROR2.jpg" alt="Image de promotion du jeu 'Risk of Rain 2'">
+                        <img src="CSS/Images/Index/sm-ROR2.jpg" alt="Image de promotion du jeu 'Risk of Rain 2'">
                         <h3>R.O.R 2</h3>
                         <ul>
-                            <li>4,89 €</li>
-                            <li>9,99 €</li>
+                            <li>4,89€</li>
+                            <li>9,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -127,11 +146,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
+                        <img src="CSS/Images/Index/sm-GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
                         <h3>Gealty Gear Strive</h3>
                         <ul>
-                            <li>8,67 €</li>
-                            <li>19,99 €</li>
+                            <li>8,67€</li>
+                            <li>19,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -140,11 +159,11 @@
                 <div class="box">
                     <span></span>
                     <div class="content">
-                        <img src="CSS/Images/Index/HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
+                        <img src="CSS/Images/Index/sm-HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
                         <h3>Hollow Knight</h3>
                         <ul>
-                            <li>6,21 €</li>
-                            <li>12,99 €</li>
+                            <li>6,21€</li>
+                            <li>12,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>

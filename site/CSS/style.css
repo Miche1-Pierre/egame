@@ -62,7 +62,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: .5rem 9%;
     background: transparent;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(15px);
@@ -74,28 +74,57 @@ header {
     color: var(--color-white);
 }
 
-.logo span {
-    color: var(--color-orange);
-    font-weight: 600;
-    transition: .2s;
+.logo img {
+    width: 80px;
 }
 
-.navbar a {
-    font-size: var(--font-size-menu);
+.navbar {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
     color: var(--color-white);
-    font-weight: 500;
-    margin-left: 2.5rem;
-    padding: 2rem 0 2rem 0;
-    transition: .3s;
+    text-decoration: none;
+    font-size: var(--font-size-menu);
 }
 
-.navbar a:hover,
-.navbar .active {
-    color: var(--color-orange);
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-orange);
+    display: block;
+    margin: auto;
+    transition: 0.2s;
 }
 
-.navbar a i {
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.navbar .bx {
     font-size: var(--font-size-logo);
+}
+
+.navbar .bx-menu,
+.bx-x {
+    display: none;
 }
 
 /* MAIN */
@@ -122,7 +151,7 @@ section {
     margin: auto;
     color: var(--color-white);
     font-size: var(--font-size-logo);
-    animation: chevron 1.5s infinite ease-in-out;
+    animation: chevron 2s infinite ease-in;
     border-radius: 5rem;
     box-shadow: 0px 0px 7px 5px var(--color-orange);
 
@@ -135,7 +164,7 @@ section {
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
         box-shadow: 0px 0px 7px 5px var(--color-orange);
     }
 
@@ -303,170 +332,28 @@ section {
 /* Right */
 .right {
     max-width: 50%;
-    z-index: -1;
 }
 
-.right .SpaceShip {
+.right .Gamer {
     position: absolute;
-    right: 20%;
-    bottom: 5%;
-    width: 12%;
-    height: 25%;
-    animation: SpaceShip 6s infinite ease;
+    right: 10%;
+    bottom: 12%;
+    width: 33%;
+    animation: gamer 5s infinite ease-in-out;
 }
 
-@keyframes SpaceShip {
+@keyframes gamer {
     0% {
-        transform: translateX(0);
+        transform: translateY(20px);
     }
-
-    33% {
-        transform: translateX(-150px);
-    }
-
-    70% {
-        transform: translateX(150px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-.right .Invaders {
-    position: absolute;
-    right: 13%;
-    bottom: 65%;
-    width: 5%;
-    height: 10%;
-}
-
-.right .Invaders:nth-child(1) {
-    right: 35%;
-    animation: Invaders1 4s infinite ease-in-out;
-}
-
-.right .Invaders:nth-child(2) {
-    right: 25%;
-    animation: Invaders2 3s infinite ease-in-out;
-}
-
-.right .Invaders:nth-child(3) {
-    right: 15%;
-    animation: Invaders3 5s infinite ease-in-out;
-}
-
-@keyframes Invaders1 {
-    0% {
-        transform: translateY(0);
-    }
-
     50% {
-        transform: translateY(-50px);
+        transform: translateY(-40px);
     }
-
     100% {
-        transform: translateY(0);
+        transform: translateY(20px);
     }
 }
 
-@keyframes Invaders2 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-50px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes Invaders3 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-50px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.right .Bullets {
-    position: absolute;
-    width: 2%;
-    height: 4%;
-}
-
-.right .Bullets:nth-child(4) {
-    right: 12%;
-    bottom: 50%;
-    animation: Bullets1 2s infinite linear;
-}
-
-.right .Bullets:nth-child(5) {
-    right: 20%;
-    bottom: 30%;
-    animation: Bullets2 3s infinite linear;
-}
-
-.right .Bullets:nth-child(6) {
-    right: 33%;
-    bottom: 40%;
-    animation: Bullets3 4s infinite linear;
-}
-
-.right .Bullets:nth-child(7) {
-    right: 40%;
-    bottom: 20%;
-    animation: Bullets4 2s infinite linear;
-}
-
-@keyframes Bullets1 {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-400px);
-    }
-}
-
-@keyframes Bullets2 {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-700px);
-    }
-}
-
-@keyframes Bullets3 {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-550px);
-    }
-}
-
-@keyframes Bullets4 {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-700px);
-    }
-}
 
 /* Section Trends */
 .trends {
@@ -750,21 +637,21 @@ section {
 }
 
 /*Création du formulaire LOGIN*/
-.login .form {
+.login .log {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 40px;
 }
 
-.login .form h2 {
+.login .log h2 {
     color: white;
     font-size: 30px;
     margin-bottom: 40px;
     letter-spacing: 1px;
 }
 
-.login .form h2::before {
+.login .log h2::before {
     content: '';
     position: absolute;
     margin-top: 40px;
@@ -773,12 +660,12 @@ section {
     width: 50px;
 }
 
-.login .form .inputBox {
+.login .log .inputBox {
     width: 100%;
     margin-top: 20px;
 }
 
-.login .form .inputBox input {
+.login .log .inputBox input {
     width: 100%;
     border: none;
     outline: none;
@@ -792,11 +679,11 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.login .form .inputBox input::placeholder {
+.login .log .inputBox input::placeholder {
     color: white;
 }
 
-.login .form .inputBox:nth-child(3) input {
+.login .log .inputBox:nth-child(3) input {
     width: 50%;
     margin-left: 20%;
     font-weight: bold;
@@ -806,27 +693,27 @@ section {
     transition: .2s;
 }
 
-.login .form .inputBox:nth-child(3) input:hover {
+.login .log .inputBox:nth-child(3) input:hover {
     border: 1px solid rgb(0, 200, 100);
     background-color: rgb(0, 200, 100);
     box-shadow: 0 0 5px rgb(0, 200, 50),
         0 0 10px rgb(0, 65, 102)
 }
 
-.login .form .forget {
+.login .log .forget {
     padding-top: 10px;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.login .form .forget a {
+.login .log .forget a {
     text-decoration: underline;
     color: var(--color-orange);
     font-weight: bold;
     transition: .2s;
 }
 
-.login .form .forget a:hover {
+.login .log .forget a:hover {
     color: rgb(0, 200, 100);
 }
 
@@ -922,13 +809,13 @@ section {
 
 .sign .forget a {
     text-decoration: underline;
-    color: white;
+    color: var(--color-orange);
     font-weight: bold;
     transition: 0.2s;
 }
 
 .sign .forget a:hover {
-    color: black;
+    color: rgb(0, 200, 100);
 }
 
 .sign .checkBox p {
@@ -1098,8 +985,6 @@ section {
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
-
-
 
 /* FOOTER */
 footer {
@@ -1641,4 +1526,68 @@ footer .Bullets:nth-child(8) {
     border-top: 1px solid rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     color: white;
+}
+
+
+
+
+
+
+@media(max-width: 1100px) {
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        font-size: var(--font-size-text);
+    }
+
+    .nav-links {
+        position: absolute;
+        background: var(--color-background);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .navbar .bx-menu,
+    .bx-x {
+        display: block;
+        color: var(--color-white);
+        margin: 10px;
+        font-size: var(--font-size-logo);
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        max-width: 100%;
+    }
+    
+    .right .Gamer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        width: 33%;
+        height: 47%;
+    }
 }
