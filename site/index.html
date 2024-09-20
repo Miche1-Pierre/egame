@@ -14,18 +14,46 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a href="#" class="logo">Game <span>Invaders</span></a>
+        <a href="#" class="logo"><img src="CSS/Images/Logo.png" alt=""></a>
 
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="gametype.html">Game Types</a>
-            <a href="#">News</a>
-            <a href="#">Contact Us</a>
-            <a href="login.html">Log-In/Sign-In</a>
-            <a href=""><i class='bx bxs-cart'></i></a>
-            <a href=""><i class='bx bxs-user'></i></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bx bx-x" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gametype.html">Game Types</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log-in/Sign-in</a></li>
+                    <li><button onclick="open_cart()"><i id="panier" class='bx bxs-cart cart_icon'></i></button></li>
+                    <li><i class='bx bxs-user'></i></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="ShowMenu()"></i>
         </nav>
+        
     </header>
+
+    <!------Javascript for MENU------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-- The sidebar -->
+    <div id="sidebar" class="sidebar">    
+        <h3>Panier</h3>  
+        <a onclick="close_cart()" href="#">X</a>
+        <hr>
+        <div class="produit">
+            <img src="CSS/GameType/FPS/LibrairieFPS/call-of-duty-modern-warfare-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg" alt="">
+        </div>
+  </div>  
     <!-- MAIN -->
     <main>
         <!-- Home -->
@@ -53,14 +81,14 @@
             </div>
 
             <div class="right">
-                <img class="Invaders" src="CSS/Images/Invaders.png" alt="">
-                <img class="Invaders" src="CSS/Images/Invaders.png" alt="">
-                <img class="Invaders" src="CSS/Images/Invaders.png" alt="">
-                <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
-                <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
-                <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
-                <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
-                <img class="SpaceShip" src="CSS/Images/SpaceShip.png" alt="">
+                    <img class="Invaders" src="CSS/Images/Dev/MonstreViolet.png" alt="">
+                    <img class="Invaders" src="CSS/Images/Dev/MonstreGreen.png" alt="">
+                    <img class="Invaders" src="CSS/Images/Dev/MonstreViolet.png" alt="">
+                    <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
+                    <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
+                    <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
+                    <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
+                    <img class="SpaceShip" src="CSS/Images/Dev/SpaceShipYellow.png" alt="">
             </div>
             <div class="scroll">
                 <a href="#BestSellers" class="scroll-btn"><i class='bx bx-chevrons-down'></i></a>
@@ -79,8 +107,8 @@
                         <img src="CSS/Images/Index/ROR2.jpg" alt="Image de promotion du jeu 'Risk of Rain 2'">
                         <h3>R.O.R 2</h3>
                         <ul>
-                            <li>4,89 €</li>
-                            <li>9,99 €</li>
+                            <li>4,89€</li>
+                            <li>9,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -92,8 +120,8 @@
                         <img src="CSS/Images/Index/GGStrive.jpg" alt="Image de promotion du jeu 'Gealty Gear Strive'">
                         <h3>Gealty Gear Strive</h3>
                         <ul>
-                            <li>8,67 €</li>
-                            <li>19,99 €</li>
+                            <li>8,67€</li>
+                            <li>19,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -105,8 +133,8 @@
                         <img src="CSS/Images/Index/HKnight.jpg" alt="Image de promotion du jeu 'Hollow Knight'">
                         <h3>Hollow Knight</h3>
                         <ul>
-                            <li>6,21 €</li>
-                            <li>12,99 €</li>
+                            <li>6,21€</li>
+                            <li>12,99€</li>
                         </ul>
                         <a href="" class="btn">Buy Now</a>
                     </div>
@@ -159,7 +187,7 @@
         <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
         <img class="Bullets" src="CSS/Images/Dev/BulletsOrange.png" alt="">
     </footer>
-
+    <script src="panier.js"></script>
 </body>
 
 </html>
